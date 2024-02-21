@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #00D9BA;
+    --secondary-color: #48BED9;
+    --font-size: 16px;
+}
+
+body {
+    background-color: white;
+    
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Initial transparent background */
+    z-index: 1000; /* make sure it appears above other elements */
+    transition: background-color 0.3s ease; /* Add smooth transition for background color */
+}
+
+#container {
+    margin-top: 50px; /* Add margin to the container to avoid overlapping with the fixed navbar */
+}
+
+/* Style for the opaque navbar when scrolled */
+#navbar.scrolled {
+    background-color: var(--primary-color);
+}
